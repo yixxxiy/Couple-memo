@@ -11,7 +11,8 @@ from telegram.ext import (
 # ───────────────────────────────────────────────
 #  配置区  ← 只需改这里
 # ───────────────────────────────────────────────
-BOT_TOKEN = "8218703598:AAENjgmoumV26rQkrMbytEgoiKMUGW2SW-I"    # @BotFather 获取
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 # ───────────────────────────────────────────────
 
 WAITING_TASK        = 1
